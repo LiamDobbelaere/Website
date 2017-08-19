@@ -1,0 +1,63 @@
+body {
+    padding-top: 64px;
+}
+
+#container {
+    width: 190px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#logo {
+    width: 322px;
+    height: 121px;
+    position: absolute;
+    text-indent :-9999px;
+    background-image: url("../media/logo-text.png");
+    left: -65px;
+    bottom: 0;
+}
+
+.hex {
+    background-image: url("../media/hexagon.png");
+    background-size: contain;
+    width: 107px;
+    height: 92px;
+    text-indent :-9999px;
+    position: absolute;
+    transition: transform 150ms ease-in-out, opacity 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+
+.hex:hover, .hex.hover {
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.hex:nth-child(1) {
+    background-image: url("../media/hexagon_d.png");
+    left: 0;
+    top: 0;
+}
+
+.hex:nth-child(2) {
+    background-image: url("../media/hexagon_s.png");
+    left: 85px;
+    top: 50px;
+}
+
+.hex:nth-child(3) {
+    background-image: url("../media/hexagon_tom.png");
+    left: 0;
+    top: 100px;
+}
+
+.hex:nth-child(3):hover {
+    background-image: url("../media/hexagon_portfolio.png");
+}
+
+.hex:nth-child(4) {
+    left: 85px;
+    top: 150px;
+}
